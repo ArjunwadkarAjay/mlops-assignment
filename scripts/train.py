@@ -1,3 +1,7 @@
+"""
+This script trains and evaluates a Random Forest model
+on already available Dataset of iris
+"""
 import pickle
 from sklearn.datasets import load_iris
 from sklearn.ensemble import RandomForestClassifier
