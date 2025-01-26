@@ -1,4 +1,11 @@
-scikit-learn==1.2.2
-flake8==6.1.0
-pytest==7.4.0
-
+exceptiongroup==1.2.2
+iniconfig==2.0.0
+joblib==1.4.2
+numpy==2.0.2
+packaging==24.2
+pluggy==1.5.0
+pytest==8.3.4
+scikit-learn==1.6.1
+scipy==1.13.1
+threadpoolctl==3.5.0
+tomli==2.2.1
