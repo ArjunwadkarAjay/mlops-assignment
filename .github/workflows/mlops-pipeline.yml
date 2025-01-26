@@ -38,8 +38,8 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run MLflow Experiment
         run: |
-          python scripts/train.py
-          python scripts/train_gridSearchCV.py
+          python ../scripts/train.py
+          python ../scripts/train_gridSearchCV.py
 
   data-versioning:
     runs-on: ubuntu-latest
@@ -54,8 +54,8 @@ jobs:
         run: pip install dvc
       - name: Track Dataset
         run: |
-          dvc add data/dataset.csv
-          git add data/dataset.csv.dvc .gitignore
+          dvc add ../data/dataset.csv
+          git add ../data/dataset.csv.dvc .gitignore
           git commit -m "Track dataset with DVC"
 
   test:
