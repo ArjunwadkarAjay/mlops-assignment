@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ajayarjunwadkar/Documents/mlops-assignment/mlruns/0/aa03df4f9fa740b6bd5383603d882a5e/artifacts
+end_time: 1737904119262
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: aa03df4f9fa740b6bd5383603d882a5e
+run_name: tasteful-bass-551
+run_uuid: aa03df4f9fa740b6bd5383603d882a5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737904114487
+status: 3
+tags: []
+user_id: ajayarjunwadkar

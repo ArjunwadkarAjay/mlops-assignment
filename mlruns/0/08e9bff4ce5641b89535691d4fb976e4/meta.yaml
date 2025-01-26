@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ajayarjunwadkar/Documents/mlops-assignment/mlruns/0/08e9bff4ce5641b89535691d4fb976e4/artifacts
+end_time: 1737904119262
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 08e9bff4ce5641b89535691d4fb976e4
+run_name: capricious-stork-720
+run_uuid: 08e9bff4ce5641b89535691d4fb976e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737904117807
+status: 3
+tags: []
+user_id: ajayarjunwadkar

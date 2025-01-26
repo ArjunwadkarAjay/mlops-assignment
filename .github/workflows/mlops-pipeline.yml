@@ -14,7 +14,8 @@ jobs:
     name: Lint Code
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Code
+        uses: actions/checkout@v3
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -23,6 +24,26 @@ jobs:
         run: pip install flake8
       - name: Run flake8
         run: flake8 scripts/
+        
+  experiment-tracking:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - name: Run MLflow Experiment
+        run: python train_model.py
+
+  data-versioning:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - name: Install DVC
+        run: pip install dvc
+
+      - name: Track Dataset
+        run: |
+          dvc add data/dataset.csv
+          git add data/dataset.csv.dvc .gitignore
+          git commit -m "Track dataset with DVC"
 
   test:
     name: Run Tests
