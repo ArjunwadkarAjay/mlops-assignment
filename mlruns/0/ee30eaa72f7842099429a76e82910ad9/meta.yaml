@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ajayarjunwadkar/Documents/mlops-assignment/mlruns/0/ee30eaa72f7842099429a76e82910ad9/artifacts
+end_time: 1737905975528
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ee30eaa72f7842099429a76e82910ad9
+run_name: rogue-stoat-511
+run_uuid: ee30eaa72f7842099429a76e82910ad9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737905973500
+status: 3
+tags: []
+user_id: ajayarjunwadkar

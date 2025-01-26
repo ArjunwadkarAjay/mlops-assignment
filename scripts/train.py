@@ -15,12 +15,22 @@ with open(dataset_path, 'rb') as f:
 # Load data from a CSV file
 data = pd.read_csv('data/dataset_iris.csv')
 
-# Assuming the last column is the target variable (label) and all others are features
-X = data.iloc[:, :-1].values  # Select all rows and all columns except the last one
-y = data.iloc[:, -1].values   # Select the last column as the target variable
+# Assuming the last column is the target variable (label)
+# and all others are features
+
+# Select all rows and all columns except the last one
+X = data.iloc[:, :-1].values
+
+# Select the last column as the target variable
+y = data.iloc[:, -1].values
 
 # Split data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.2,
+    random_state=42
+)
 
 # Start the main MLflow run
 with mlflow.start_run():
@@ -38,7 +48,9 @@ with mlflow.start_run():
         with mlflow.start_run(nested=True):
             # Train the model
             model = RandomForestClassifier(
-                n_estimators=n_estimators[i], max_depth=max_depth[i], random_state=42
+                n_estimators=n_estimators[i],
+                max_depth=max_depth[i],
+                random_state=42
             )
             model.fit(X_train, y_train)
 
@@ -53,7 +65,9 @@ with mlflow.start_run():
 
             # Infer the signature and input example
             signature = infer_signature(X_train, model.predict(X_train))
-            input_example = X_train[:5]  # Use a small slice of the input data as an example
+
+            # Use a small slice of the input data as an example
+            input_example = X_train[:5]
 
             # Log the model with signature and input example
             mlflow.sklearn.log_model(
@@ -63,7 +77,8 @@ with mlflow.start_run():
                 input_example=input_example,
             )
 
-            print(f"Model with n_estimators={n_estimators[i]} and max_depth={max_depth[i]}")
+            print(f"Model's n_estimators={n_estimators[i]}")
+            print(f"Model's max_depth={max_depth[i]}")
             print(f"Accuracy: {accuracy:.4f}")
 
 print("Experiments logged to MLflow.")

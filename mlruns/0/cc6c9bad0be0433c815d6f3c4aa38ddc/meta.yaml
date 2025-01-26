@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ajayarjunwadkar/Documents/mlops-assignment/mlruns/0/cc6c9bad0be0433c815d6f3c4aa38ddc/artifacts
+end_time: 1737906124987
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cc6c9bad0be0433c815d6f3c4aa38ddc
+run_name: loud-grouse-328
+run_uuid: cc6c9bad0be0433c815d6f3c4aa38ddc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737906122739
+status: 4
+tags: []
+user_id: ajayarjunwadkar

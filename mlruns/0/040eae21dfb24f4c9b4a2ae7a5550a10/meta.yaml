@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ajayarjunwadkar/Documents/mlops-assignment/mlruns/0/040eae21dfb24f4c9b4a2ae7a5550a10/artifacts
+end_time: 1737906239115
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 040eae21dfb24f4c9b4a2ae7a5550a10
+run_name: illustrious-swan-0
+run_uuid: 040eae21dfb24f4c9b4a2ae7a5550a10
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737906236922
+status: 4
+tags: []
+user_id: ajayarjunwadkar

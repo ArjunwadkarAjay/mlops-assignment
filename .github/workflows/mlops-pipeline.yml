@@ -30,7 +30,9 @@ jobs:
     needs: setup
     steps:
       - name: Run MLflow Experiment
-        run: python train_model.py
+        run: |
+          python scripts/train.py
+          python scripts/train_gridSearchCV.py
 
   data-versioning:
     runs-on: ubuntu-latest
